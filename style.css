@@ -1,0 +1,139 @@
+/* Google Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+
+/* Navbar Styling */
+
+nav {
+    position: fixed;
+    /* Instructions Requirement */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 1000;
+    transition: 0.6s ease;
+    /* Smooth transition effect */
+}
+
+
+/* Default Navbar State (Transparent) */
+
+nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav .logo span {
+    color: #00bcd4;
+    /* Cyan highlight */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+/* Hover Effect on Menu Items */
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+/* Scrolled Navbar State (Added via JS) */
+
+nav.scrolled {
+    background-color: #111;
+    /* Dark background on scroll */
+    padding: 15px 50px;
+    /* Shrinks slightly */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Hero Section */
+
+#home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?technology,code');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 30px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #028a9b;
+}
+
+
+/* Section Styling for demonstration */
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section-dark {
+    background-color: #222;
+    color: white;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #333;
+}
